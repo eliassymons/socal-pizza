@@ -8,7 +8,7 @@ export default function Hero() {
         <span>Grab a Slice</span>
       </h1>
       <img
-        src="/images/pizza-slice-svgrepo-com.svg"
+        src={process.env.PUBLIC_URL + `/images/pizza-slice-svgrepo-com.svg`}
         alt="pizza-slice"
         className="slice-img"
       />

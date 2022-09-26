@@ -2,7 +2,6 @@ import MenuItem from "./MenuItem";
 import pizzaMenu from "../pizzaMenu";
 
 export default function Menu(props) {
-  let sum = props.sum;
   const cards = pizzaMenu.map((item) => {
     return (
       <MenuItem

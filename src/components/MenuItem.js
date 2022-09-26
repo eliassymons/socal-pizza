@@ -6,7 +6,7 @@ export default function MenuItem(props) {
     <Card className="card swing-in-top-fwd">
       <Card.Img
         variant="top"
-        src={`/images/${props.image}`}
+        src={process.env.PUBLIC_URL + `/images/${props.image}`}
         className="card-img"
         alt="pizza"
       />

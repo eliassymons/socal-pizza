@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/socal-pizza/static/css/main.eb31d8d4.css",
+    "main.css": "/socal-pizza/static/css/main.ca2b20bc.css",
     "main.js": "/socal-pizza/static/js/main.9cfe2899.js",
     "index.html": "/socal-pizza/index.html",
-    "main.eb31d8d4.css.map": "/socal-pizza/static/css/main.eb31d8d4.css.map",
+    "main.ca2b20bc.css.map": "/socal-pizza/static/css/main.ca2b20bc.css.map",
     "main.9cfe2899.js.map": "/socal-pizza/static/js/main.9cfe2899.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb31d8d4.css",
+    "static/css/main.ca2b20bc.css",
     "static/js/main.9cfe2899.js"
   ]
 }

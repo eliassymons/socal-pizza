@@ -13,6 +13,22 @@ body {
 
 /*Animations*/
 
+@-webkit-keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
 @keyframes swing-in-top-fwd {
   0% {
     -webkit-transform: rotateX(-100deg);
@@ -30,6 +46,18 @@ body {
   }
 }
 
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
 @keyframes roll-in-left {
   0% {
     -webkit-transform: translateX(-800px) rotate(-540deg);
@@ -85,8 +113,10 @@ body {
   .slice-img {
     height: 20vh;
     filter: invert(1);
+    -webkit-animation: roll-in-left 0.6s ease-out both;
     animation: roll-in-left 0.6s ease-out both;
   }
+
   button {
     border: 1px solid rgb(121, 121, 121);
     margin-top: 2rem;
@@ -99,7 +129,9 @@ body {
   }
 }
 .swing-in-top-fwd {
-  animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  -webkit-animation: swing-in-top-fwd 0.5s
+    cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 }
 
 .menu {
